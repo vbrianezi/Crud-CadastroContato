@@ -24,5 +24,8 @@ namespace ControleDeContatos.Models
         [Required(ErrorMessage = "Informe o Telefone")]
         [Phone(ErrorMessage ="Telefone inválido")]
         public string Telefone { get; set; }
+
+        //[Required(ErrorMessage = "Informe o nome da mãe ou n/d")]
+        public string? NomeMae { get; set; }
     }
 }

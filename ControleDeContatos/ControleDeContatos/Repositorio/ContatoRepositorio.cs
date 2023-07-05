@@ -46,6 +46,8 @@ namespace ControleDeContatos.Repositorio
             contatoDB.Nome = contato.Nome;
             contatoDB.Email = contato.Email;
             contatoDB.Telefone = contato.Telefone;
+            contatoDB.NomeMae = contato.NomeMae;
+
 
             _context.Contatos.Update(contatoDB);
             _context.SaveChanges();
